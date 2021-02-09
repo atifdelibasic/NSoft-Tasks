@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+    />
+    <title>Task No. 1</title>
+  </head>
+  <body>
+    <header class="p-3 bg-info text-white">
+      <nav class="container d-flex justify-content-between">
+        <a href="index.html" class="text-white"> <h4>Task No. 1</h4></a>
+        <h4>nSoft</h4>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="my-3 border p-3 text-justify">
+        <h4>Opis zadatka:</h4>
+        <p>
+          Potrebno je napraviti funkciju koja ce izračunati sumu 8 brojeva koji
+          okružuju broj koji je proslijeđen funkciji. U sumu se ubraja i
+          proslijeđeni broj. Ukoliko broj nema 8 brojeva koji ga okružuju, ne
+          ubrajaju se u sumu. Primjer funkcije: sum(45) -> 405 Brojevi koji
+          okružuju broj 45 su: 34, 35, 36, 44, 46, 54, 55, 56. Suma ovih brojeva
+          je 360. Na ovu sumu se dodaje broj koji se proslijedio funkciji (45) i
+          to nam daje rezultat 405.
+        </p>
+        <hr />
+        <form>
+          <div class="form-group">
+            <label>Unesite broj između 11 i 90: </label>
+
+            <input
+              type="number"
+              id="val"
+              class="form-control my-1 w-25"
+              min="11"
+              max="89"
+              required
+            />
+            <input
+              type="submit"
+              value="Izračunaj sumu"
+              id="btn"
+              class="btn btn-info"
+            />
+          </div>
+          <div class="form-group">
+            <p>Rezultat sume:</p>
+            <p id="suma" class="border p-3 text-success">___________</p>
+            <table id="arr" class="table table-border"></table>
+          </div>
+        </form>
+        <hr />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+html {
+    overflow-y: scroll;
+}
+
+.circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  position: relative;
+  margin: 20px;
+  background-color: rgb(230, 175, 175);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle:before {
+  content: "";
+  height: calc(100% + 20px);
+  width: calc(100% + 20px);
+  border-radius: inherit;
+  animation: spin 10s linear infinite;
+  top: -10px;
+  right: -10px;
+  position: absolute;
+  border: 3px dashed;
+  border-color: green green red red;
+  text-align: center;
+}
+
+.nova:before {
+  animation: spin1 10s linear infinite;
+}
+
+@keyframes spin1 {
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
